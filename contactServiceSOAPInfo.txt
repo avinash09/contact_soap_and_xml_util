@@ -1,0 +1,13 @@
+F:\Avinash\Project\WebService\SOAP\ContactServiceResponse
+
+wsimport -keep -s F:\Avinash\Project\WebService\SOAP\ContactServiceClient\contactclient\src\main\java http://localhost:8989/ws/contactservice?wsdl 
+
+http://localhost:8989/ws/contactservice?wsdl
+
+//example to create java artifacts from xsd
+xjc -d src -p blog.thoughts.on.java schema.xsd
+
+//run below command in jdk/bin to get artifacts from xsd
+xjc -d F:\Avinash\Project\WebService\SOAP\ContactServiceClient\contactclient\src\main\java -p com.student.artifacts F:\Avinash\Project\WebService\SOAP\ContactServiceClient\contactclient\src\main\java\com\student\xsd\students.xsd
+
+
